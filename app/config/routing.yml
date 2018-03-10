@@ -1,0 +1,13 @@
+ens_jobeet:
+    resource: "@EnsJobeetBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+blogger_blog:
+    resource: "@BloggerBlogBundle/Controller/Page"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

@@ -1,0 +1,16 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/about.html.twig #}
+{% extends '@BloggerBlog/Plantilla/layout.html.twig' %}
+
+{% block blog_title %} Contact symblog {% endblock %}
+{% block body %}
+    <header>
+        <h1>Contact symblog</h1>
+    </header>
+    <article>
+       <p>Want to contact symblog?.</p>
+       {{form_start(form, {'action': '', 'method':'POST'})}}
+       {{ form_widget(form) }}
+       {{ form_errors(form) }}
+       {{ form_end(form) }}
+    </article>
+{% endblock %}
